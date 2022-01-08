@@ -7,12 +7,13 @@ body {
   /* color: var(--tertiary-color); */
   font-family: "Helvetica", "Arial", "sans-serif";
 }
-/* :root {
-  --primary-color: ;
-    --secondary-color: ;
-    --tertiary-color: ;
-} */
+:root {
+  --primary-color: #00b894;
+  /* --secondary-color: ;
+    --tertiary-color: ; */
+}
 header {
+  background-color: var(--primary-color);
   padding: 20px 35px;
   display: flex;
   justify-content: space-between;
@@ -26,7 +27,6 @@ header h1 {
   font-weight: bold;
   font-size: 36px;
   margin: 0;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header a {
   text-decoration: none;
@@ -45,4 +45,10 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+}
+/* aside {
+
+} */
+#about-me img {
+  width: 400px;
 }
