@@ -21,6 +21,15 @@ body {
 }
 header {
   /* background-color: var(--primary-color); */
+  background: linear-gradient(
+      -50deg,
+      rgba(207, 243, 204, 0.342),
+      rgba(95, 195, 228, 0.564)
+    ),
+    url(/assets/images/mountain-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   padding: 20px 35px;
   display: flex;
   justify-content: space-between;
@@ -62,10 +71,11 @@ header nav ul li a {
       rgba(207, 243, 204, 0.342),
       rgba(95, 195, 228, 0.564)
     ),
-    url(/assets/images/mountain-hero.jpg) center center / cover no-repeat;
+    url(/assets/images/mountain-hero.jpg);
   height: 400px;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
 }
 aside {
@@ -78,6 +88,10 @@ aside img {
   display: flex;
   flex-wrap: wrap;
 }
+#about-me h2 {
+  display: center;
+}
+
 /* #about-me img {
   width: 400px;
 } */
