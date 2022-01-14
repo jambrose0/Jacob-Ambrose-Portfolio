@@ -7,13 +7,20 @@ body {
   /* color: var(--tertiary-color); */
   font-family: "Helvetica", "Arial", "sans-serif";
 }
-:root {
-  --primary-color: #00b894;
-  /* --secondary-color: ;
-    --tertiary-color: ; */
+/* :root {
+  --primary-color: #00b894; 
+   --secondary-color: ;
+    --tertiary-color: ;
+} */
+.unstyled-list {
+  padding-left: 0;
+  list-style: none;
+}
+.unstyled-list a {
+  text-decoration: none;
 }
 header {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   padding: 20px 35px;
   display: flex;
   justify-content: space-between;
@@ -27,14 +34,16 @@ header h1 {
   font-weight: bold;
   font-size: 36px;
   margin: 0;
+  display: inline;
 }
 header a {
   text-decoration: none;
 }
 header nav {
+  float: right;
   margin: 7px 0;
 }
-header nav ul {
+header nav ul li {
   display: inline;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -42,13 +51,33 @@ header nav ul {
   list-style: none;
 }
 header nav ul li a {
+  float: right;
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
-/* aside {
-
-} */
-#about-me img {
-  width: 400px;
+.hero {
+  background: linear-gradient(
+      -50deg,
+      rgba(207, 243, 204, 0.342),
+      rgba(95, 195, 228, 0.564)
+    ),
+    url(/assets/images/mountain-hero.jpg) center center / cover no-repeat;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
+aside {
+  float: left;
+}
+aside img {
+  width: 300px;
+}
+#about-me {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* #about-me img {
+  width: 400px;
+} */
