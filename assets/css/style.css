@@ -41,7 +41,7 @@ header {
   -webkit-animation: gradientAnimation 40s ease infinite;
   animation: gradientAnimation 40s ease infinite;
   background-size: cover;
-  background-position: center;
+  background-position: 80%;
   background-attachment: fixed;
   padding: 20px 35px;
   display: flex;
@@ -87,7 +87,7 @@ header nav ul li a {
     url(../images/mountain-hero.jpg) 0 0 / cover no-repeat;
   height: 600px;
   background-size: cover;
-  background-position: center;
+  background-position: 80%;
   background-attachment: fixed;
   -webkit-animation: gradientAnimation 40s ease infinite;
   animation: gradientAnimation 40s ease infinite;
@@ -97,17 +97,112 @@ header nav ul li a {
   text-align: center;
   align-items: flex-end;
 }
-aside {
+#contact-me {
   float: left;
 }
-aside img {
+#contact-me img {
   width: 300px;
   border-radius: 25px;
 }
+#contact-me a img {
+  width: 32px;
+}
 #about-me {
-  display: flex;
-  flex-wrap: wrap;
+  padding: 10px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 #about-me h2 {
-  display: center;
+  margin-bottom: 10px;
+  /* text-align: center; */
 }
+
+/* Smaller screen formating
+/* Media query for smaller desktop screens and smaller */
+/* @media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
+  }
+  .hero-cta,
+  .hero-form {
+    width: 100%;
+  }
+  .hero-cta {
+    text-align: center;
+  }
+  .section-title {
+    width: 80%;
+  }
+  .trainer {
+    flex: 0 70%;
+  }
+  .contact-info iframe {
+    flex: 1 100%;
+  }
+} */
+/* Media query for tablets and smaller 
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .step-text {
+    flex: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+  .section-title {
+    width: 95%;
+  }
+  .intro p {
+    width: 100%;
+  }
+  .trainer {
+    flex: 0 100%;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  .contact-info > * {
+    flex: 0 100%;
+  }
+  .contact-form {
+    order: 3;
+  }
+}  */
