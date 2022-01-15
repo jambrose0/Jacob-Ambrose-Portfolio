@@ -95,8 +95,11 @@ header nav ul li a {
   position: relative;
 }
 .hero h2 {
+  position: absolute;
   text-align: center;
-  align-items: flex-end;
+  bottom: 16px;
+  /* left: 0;
+  right: 0; */
 }
 #contact-me {
   float: left;
@@ -104,6 +107,9 @@ header nav ul li a {
 #contact-me img {
   width: 300px;
   border-radius: 25px;
+}
+#contact-me ul li {
+  line-height: 25px;
 }
 #contact-me a img {
   width: 32px;
