@@ -70,11 +70,8 @@ header nav ul li {
   display: inline;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  list-style: none;
 }
 header nav ul li a {
-  float: right;
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
@@ -97,10 +94,10 @@ header nav ul li a {
 .hero h2 {
   font-size: 35px;
   display: inline;
-  color: rgba(248, 212, 212, 0.411); /*Get a better color*/
+  color: rgba(245, 245, 245, 0.76); /*Get a better color*/
   position: absolute;
   bottom: 16px;
-  padding: 0 475px 0 600px;
+  padding: 0 460px 0 550px;
 }
 
 .primary-border .float-right {
@@ -111,7 +108,7 @@ header nav ul li a {
 }
 .section-title {
   font-size: 55px;
-  padding: 30px 700px 10px 675px;
+  padding: 30px 600px 10px 600px;
   display: inline-block;
 }
 .section-content {
