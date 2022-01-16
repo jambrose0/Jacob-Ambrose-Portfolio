@@ -12,7 +12,6 @@ body {
 :root {
   --primary-color: rgba(95, 195, 228, 0.864);
   --secondary-color: rgba(20, 66, 16, 0.445);
-  --tertiary-color: ;
 }
 .unstyled-list {
   padding-left: 0;
@@ -22,7 +21,6 @@ body {
   text-decoration: none;
 }
 header {
-  /* background-color: var(--primary-color); */
   background: linear-gradient(
       -50deg,
       rgba(76, 240, 61, 0.336),
@@ -88,18 +86,17 @@ header nav ul li a {
   margin: 0 0 0 650px;
 }
 
-.primary-border .float-right {
-  align-items: right;
-}
-.float-left .secondary-border {
-  margin-bottom: 25px;
+.section-border {
+  text-align: center;
+  margin: 60px 0 55px 10px;
 }
 .section-title {
   font-size: 55px;
   /* padding: 30px 600px 10px 600px; */
   /* margin: 10px 0 15px 700px; */
   display: inline-block;
-  margin-bottom: 15px;
+  margin: 15px 0 0 15px;
+  /* margin-bottom: 15px; */
   border-bottom: 3px solid;
 }
 .secondary-border {
@@ -114,12 +111,10 @@ header nav ul li a {
 /* about me styling */
 #about-me {
   padding: 10px;
-  margin-bottom: 25px;
-  text-align: center;
+  /* margin-bottom: 25px; */
+  /* text-align: center; */
 }
-/* #about-me h2 {
-  margin: 10px 0 15px 700px;
-} */
+
 #about-me img {
   width: 250px;
   border-radius: 25px;
@@ -127,19 +122,16 @@ header nav ul li a {
   margin: 0 15px 0 15px;
 }
 /* My work section */
-#my-work {
+/* #my-work {
   margin: 100px 0 0 10px;
   text-align: center;
-}
+} */
 #my-work img {
   margin-top: 15px;
   border-radius: 25px;
   border: 5px solid var(--primary-color);
 }
-/* .work-border {
-  border-radius: 25px;
-  border: 5px solid var(--primary-color);
-} */
+
 #my-work img:hover {
   color: rgba(128, 128, 128, 0.26);
   opacity: 60%;
@@ -160,10 +152,6 @@ header nav ul li a {
   float: left;
   margin-left: 250px;
 }
-/* .second-web h3 {
-  float: left;
-  text-align: center;
-} */
 .second-web img {
   height: 300px;
   width: 500px;
@@ -179,9 +167,9 @@ header nav ul li a {
 }
 
 /* Contact me styling */
-#contact-me {
+/* #contact-me {
   float: left;
-}
+} */
 
 #contact-me ul li {
   line-height: 25px;
