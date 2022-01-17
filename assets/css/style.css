@@ -77,7 +77,9 @@ header a:visited {
 .hero h2 {
   font-size: 35px;
   display: inline;
-  color: rgba(245, 245, 245, 0.76);
+  color: rgba(245, 245, 245, 0.616);
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
   position: absolute;
   bottom: 16px;
   margin: 0 0 0 650px;
@@ -100,6 +102,7 @@ header a:visited {
   border-color: var(--secondary-color);
 }
 .section-content {
+  display: flex;
   flex-wrap: wrap;
   padding-bottom: 10px;
   margin: 5px 20px 0 20px;
@@ -198,6 +201,7 @@ footer {
     margin-top: 20px;
     width: 100%;
     justify-content: center;
+    overflow: hidden;
   }
   header nav ul li a {
     font-size: 20px;
@@ -206,12 +210,11 @@ footer {
     width: 100%;
   }
   .hero h2 {
-    width: 60%;
+    width: 50%;
     flex-wrap: wrap;
   }
-  .hero-cta,
-  .hero-form {
-    width: 100%;
+  #my-work img {
+    max-width: 60%;
   }
   .hero-cta {
     text-align: center;
@@ -223,21 +226,12 @@ footer {
     flex: 1 100%;
   }
 }
-/* Media query for tablets and smaller 
+/* Media query for tablets and smaller  */
 @media screen and (max-width: 768px) {
   section {
     padding: 30px 15px;
   }
-  .step h3 {
-    flex: 1 100%;
-    text-align: center;
-  }
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
-  }
-  .step-img {
+  #contact-me img {
     flex: 0 32%;
     margin-right: 0;
     margin-top: 15px;
@@ -251,22 +245,11 @@ footer {
   .hero-form button {
     width: 100%;
   }
-  .section-title {
-    width: 95%;
+  .section-title .secondary-border {
+    width: 65%;
   }
-  .intro p {
-    width: 100%;
-  }
-  .trainer {
-    flex: 0 100%;
-  }
-  .contact-info {
+
+  #contact-me {
     text-align: center;
   }
-  .contact-info > * {
-    flex: 0 100%;
-  }
-  .contact-form {
-    order: 3;
-  }
-}  */
+}
