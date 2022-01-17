@@ -6,7 +6,7 @@
 - This portfolio can be used to advertise Jacob Ambrose's web design skills.
 - Creating this portfolio helped further cement a knowledge and practice of various languages and practices.
 
-## Skills
+## Languages Utilised:
 
 - This portfolio utilizes:
   - HTML
