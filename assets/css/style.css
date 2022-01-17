@@ -3,22 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* gradient animation */
 
 body {
-  background-color: rgba(44, 95, 40, 0.336);
+  background-color: rgba(180, 215, 231, 0.836);
   font-family: "Helvetica", "Arial", "sans-serif";
 }
 :root {
   --primary-color: rgba(95, 195, 228, 0.864);
   --secondary-color: rgba(20, 66, 16, 0.445);
-}
-.unstyled-list {
-  padding-left: 0;
-  list-style: none;
-}
-.unstyled-list a {
-  text-decoration: none;
 }
 header {
   background: linear-gradient(
@@ -26,9 +18,7 @@ header {
       rgba(76, 240, 61, 0.336),
       rgba(95, 195, 228, 0.864)
     ),
-    url(../images/mountain-hero.jpg) 0 0 / cover no-repeat;
-  -webkit-animation: gradientAnimation 40s ease infinite;
-  animation: gradientAnimation 40s ease infinite;
+    url(../images/mountain-hero.jpg);
   background-size: cover;
   background-position: 80%;
   background-attachment: fixed;
@@ -59,10 +49,17 @@ header nav ul li {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+}
+header a:link {
+  color: rgb(2, 87, 2);
+}
+header a:visited {
+  color: rgb(2, 87, 2);
 }
 .hero {
   background: linear-gradient(
@@ -120,12 +117,9 @@ header nav ul li a {
   border-radius: 25px;
   float: left;
   margin: 0 15px 0 15px;
+  border: 3px solid white;
 }
 /* My work section */
-/* #my-work {
-  margin: 100px 0 0 10px;
-  text-align: center;
-} */
 #my-work img {
   margin-top: 15px;
   border-radius: 25px;
@@ -167,19 +161,30 @@ header nav ul li a {
 }
 
 /* Contact me styling */
-/* #contact-me {
-  float: left;
-} */
+#contact-me {
+  text-decoration: none;
+}
 
 #contact-me ul li {
   line-height: 25px;
 }
-#contact-me a img {
+#contact-me img {
+  margin: 25px 15px 0 15px;
   width: 32px;
+}
+#contact-me ul li {
+  display: inline;
+  margin: 0 30px 20px 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* footer styling */
+footer {
+  text-align: center;
 }
 /* Smaller screen formating
 /* Media query for smaller desktop screens and smaller */
-/* @media screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {
   header {
     padding-bottom: 0;
     justify-content: center;
@@ -197,10 +202,12 @@ header nav ul li a {
   header nav ul li a {
     font-size: 20px;
   }
-  footer h2,
-  footer div {
-    text-align: center;
+  .hero {
     width: 100%;
+  }
+  .hero h2 {
+    width: 60%;
+    flex-wrap: wrap;
   }
   .hero-cta,
   .hero-form {
@@ -212,13 +219,10 @@ header nav ul li a {
   .section-title {
     width: 80%;
   }
-  .trainer {
-    flex: 0 70%;
-  }
-  .contact-info iframe {
+  #contact-me {
     flex: 1 100%;
   }
-} */
+}
 /* Media query for tablets and smaller 
 @media screen and (max-width: 768px) {
   section {
